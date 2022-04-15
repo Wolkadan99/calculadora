@@ -52,7 +52,7 @@ class HomeController
         else
             Logger::logger("Foi realizada a operação de divisão!", "info");
     }
-}
+
 }
 
 ?>

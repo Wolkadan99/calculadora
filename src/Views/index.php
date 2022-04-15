@@ -1,3 +1,14 @@
+<?php
+
+use Aluno\ProjetoPhp\Config\Logger;
+
+session_start();
+
+require_once('methods/verification.php');
+verification('./login.page.php');
+Logger::logger("Usuário na tela principal", "info");
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -42,6 +53,12 @@
         </div>
     </div>
 </form>
+
+<div class="row">
+    <a href="../../methods/logout.php">
+        <button class="btn">Sair</button>
+    </a>
+</div>
 
 <!-- Optional JavaScript; choose one of the two! -->
 
